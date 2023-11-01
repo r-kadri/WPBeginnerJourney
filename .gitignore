@@ -1,0 +1,5 @@
+# Ignore WordPress configuration files
+wp-config.php
+
+# Ignore WordPress cache files
+wp-content/cache/
