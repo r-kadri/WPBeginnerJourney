@@ -14,8 +14,10 @@ function register_assets() {
     wp_enqueue_script('bootstrap');
 }
 
-add_action('after_setup_theme', function () {
+function supports() {
     add_theme_support('title-tag');
-});
+    add_theme_support('post-thumbnails');
+}
 
 add_action('wp_enqueue_scripts', 'App\register_assets');
+add_action('after_setup_theme', 'App\supports');
